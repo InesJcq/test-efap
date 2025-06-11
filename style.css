@@ -1,36 +1,413 @@
-body {
-  background-color: rgb(234, 235, 235);
+/* Reset de base */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.navbar {
+body {
+  font-family: "Sen", sans-serif;
+  background-color: #40403c;
+  color: #222;
+}
+
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  padding: 0 24px
+  padding: 2rem;
+  background-color: rgb(3, 3, 3);
 }
 
 .logo {
-  width: 180px;
+  font-size: 1.8rem;
+  color: #fcfcfc;
 }
 
-.link {
+.nav a {
+  margin: 0 1rem;
   text-decoration: none;
-  font-size: 24px;
-  background-color: purple;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 4px;
+  color: #fdfbfb;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
 }
 
-.links {
+.nav a:hover {
+  border-bottom: 1px solid #544f4f;
+}
+
+.cta-button {
+  background-color: #fcfbfb;
+  color: rgb(1, 1, 1);
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+/* Hero section */
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fbf8f8;
+}
+
+/* About section */
+.about {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.maps, .video {
+.image-container {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.text-container {
+  flex: 1 1 400px;
+  padding: 1rem;
+}
+
+.text-container h3 {
+  font-size: 2rem;
+  color: #fcfafa;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #030303;
+  color: #fbfafa;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(3, 3, 3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #f9f7f7;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #faf8f8;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+}
+
+.nav a:hover {
+  border-bottom: 1px solid #f6f3f3;
+}
+
+.cta-button {
+  background-color: #fcfbfb;
+  color: rgb(10, 10, 10);
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.95rem;
+}
+
+/* Hero section */
+.hero {
+  padding: 3rem 2rem;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #f9f7f7;
+  background-color: rgb(5, 5, 5);
+}
+
+/* Image en haut */
+.image-bloc {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image-bloc img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+/* Intro texte */
+.intro-services {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.3rem;
+  color: #fcfbfb;
+}
+
+/* Forfaits */
+.forfaits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.forfait {
+  background-color: #383938;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.forfait h3 {
+  color: #fbfafa;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.forfait p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.forfait img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Section CTA */
+.cta {
+  background-color: rgb(3, 2, 2);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 3rem;
+  color: #f6f4f4;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #020202;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.newsletter p {
+  margin-bottom: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.6rem;
+  width: 250px;
+  border: 1px solid #605f5f;
+  margin-right: 1rem;
+}
+
+.newsletter button {
+  background-color: #f9f8f8;
+  color: rgb(3, 3, 3);
+  padding: 0.6rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-links a {
+  display: block;
+  color: #f7f5f5;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer .credits {
+  margin-top: 1rem;
+  color: #222;
+}
+/* Style de base déjà fourni dans style.css général */
+
+/* Blog principal */
+.blog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background-color: rgb(3, 3, 3);
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4d4d4c;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.post .meta {
+  color: #f8f6f6;
+  font-size: 0.9rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.post h2 {
+  color: #faf9f9;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  text-decoration: underline;
+  color: #f9f9f9;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-size: 3rem;
+  color: #2a2826;
+  background-color: rgb(4, 4, 4);
+}
+
+/* GALERIE */
+.gallery {
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* INTRO */
+.contact-intro {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.contact-intro a {
+  color: #fbf9f9;
+  text-decoration: underline;
+}
+
+/* FORMULAIRE */
+.contact-form {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form span {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #f7f5f5;
+  background-color: transparent;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form fieldset {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-form fieldset label {
+  border: 1px solid #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form .form-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-form .form-row > div {
+  flex: 1;
+}
+
+.contact-form button {
+  width: fit-content;
+  background-color: #faf8f8;
+  color: rgb(5, 4, 4);
+  padding: 0.6rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
 }
